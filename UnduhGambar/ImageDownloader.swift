@@ -10,37 +10,9 @@ import UIKit
 
 class ImageDownloader: Operation {
     
-    private let movie: Movie
-    
-    init(movie: Movie) {
-        self.movie = movie
+    func downloadImage(url: URL) async throws -> UIImage {
+        async let imageData: Data = try Data(contentsOf: url)
+        return UIImage(data: try await imageData)!
     }
     
-    override func main() {
-        if isCancelled { return }
-        
-        guard let imageData = try? Data(contentsOf: self.movie.poster) else { return }
-        
-        if isCancelled { return }
-        
-        if !imageData.isEmpty {
-            self.movie.image = UIImage(data: imageData)
-            self.movie.state = .downloaded
-        } else {
-            self.movie.image = nil
-            self.movie.state = .failed
-        }
-    }
-    
-}
-
-class PendingOperations {
-    lazy var downloadInProgress: [IndexPath: Operation] = [:]
-    
-    lazy var downloadQueue: OperationQueue = {
-        var queue = OperationQueue()
-        queue.name = "com.wiryadev.imagedownload"
-        queue.maxConcurrentOperationCount = 2
-        return queue
-    }()
 }
