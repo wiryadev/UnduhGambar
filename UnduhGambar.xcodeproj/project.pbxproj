@@ -13,6 +13,10 @@
 		43885A6429B2223800580B7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43885A6229B2223800580B7C /* Main.storyboard */; };
 		43885A6629B2223900580B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43885A6529B2223900580B7C /* Assets.xcassets */; };
 		43885A6929B2223900580B7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43885A6729B2223900580B7C /* LaunchScreen.storyboard */; };
+		43885A7229B2230A00580B7C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43885A7029B2230A00580B7C /* MovieTableViewCell.swift */; };
+		43885A7329B2230A00580B7C /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43885A7129B2230A00580B7C /* MovieTableViewCell.xib */; };
+		43885A7529B2252500580B7C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43885A7429B2252500580B7C /* MovieModel.swift */; };
+		43885A7729B22A8600580B7C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43885A7629B22A8600580B7C /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		43885A6529B2223900580B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43885A6829B2223900580B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43885A6A29B2223900580B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43885A7029B2230A00580B7C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		43885A7129B2230A00580B7C /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		43885A7429B2252500580B7C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		43885A7629B22A8600580B7C /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				43885A6529B2223900580B7C /* Assets.xcassets */,
 				43885A6729B2223900580B7C /* LaunchScreen.storyboard */,
 				43885A6A29B2223900580B7C /* Info.plist */,
+				43885A7029B2230A00580B7C /* MovieTableViewCell.swift */,
+				43885A7129B2230A00580B7C /* MovieTableViewCell.xib */,
+				43885A7429B2252500580B7C /* MovieModel.swift */,
+				43885A7629B22A8600580B7C /* ImageDownloader.swift */,
 			);
 			path = UnduhGambar;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			files = (
 				43885A6929B2223900580B7C /* LaunchScreen.storyboard in Resources */,
 				43885A6629B2223900580B7C /* Assets.xcassets in Resources */,
+				43885A7329B2230A00580B7C /* MovieTableViewCell.xib in Resources */,
 				43885A6429B2223800580B7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +153,9 @@
 			files = (
 				43885A6129B2223800580B7C /* ViewController.swift in Sources */,
 				43885A5D29B2223800580B7C /* AppDelegate.swift in Sources */,
+				43885A7529B2252500580B7C /* MovieModel.swift in Sources */,
+				43885A7229B2230A00580B7C /* MovieTableViewCell.swift in Sources */,
+				43885A7729B22A8600580B7C /* ImageDownloader.swift in Sources */,
 				43885A5F29B2223800580B7C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
